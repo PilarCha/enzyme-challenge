@@ -1,6 +1,9 @@
 <div class="container">
     <div class = "row">
         <div class = "col-lg-12 mt-5">
+              <% if flash[:alert] %>
+                <div class="alert alert-warning"><%= flash[:alert] %></div>
+              <% end %>
             <div class="mx-auto mt-5" style="width: 400px">
                 <%= form_with(url:search_path,method:'get',local:true) do %>
                 <% end %>
