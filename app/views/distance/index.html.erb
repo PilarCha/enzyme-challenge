@@ -5,6 +5,7 @@
                 <div class="alert alert-warning"><%= flash[:alert] %></div>
               <% end %>
             <div class="mx-auto mt-5" style="width: 400px">
+                <%=@closest_food%>
                 <%= form_with(url:search_path,method:'get',local:true) do %>
                 <% end %>
             </div>
