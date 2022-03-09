@@ -1,4 +1,4 @@
 class DistanceController < ApplicationController
-  def index
+  def index    
   end
 end
