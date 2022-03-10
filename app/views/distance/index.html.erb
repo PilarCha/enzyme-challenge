@@ -6,6 +6,9 @@
               <% end %>
             <div class="mx-auto mt-5" style="width: 400px">
                 <%=@closest_food%>
+                <p>
+                    <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=17&size=400x300&center=#{@latitude},#{@longitude}&key=#{Rails.application.credentials.google_maps_api_key}", alt: "Map" %>
+                </p>
                 <%= form_with(url:search_path,method:'get',local:true) do %>
                 <% end %>
             </div>

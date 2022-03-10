@@ -41,6 +41,8 @@ class DistanceController < ApplicationController
         end
       end
     end
+    @latitude = @closest_food['location']['latitude']
+    @longitude = @closest_food['location']['longitude']
   end
 
   def search
